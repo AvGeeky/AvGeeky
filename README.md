@@ -30,7 +30,7 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
   - PBKDF2-based auth, OTP login, and immutable blockchain in Java + MongoDB.  
   - Dockerized modular backend; deployed on Vercel.  
   - 🥇 Won 1st prize at Encender (CSE Dept Project Expo).  
-  - 🔗 [Website (Demo Available upon clicking Login)](https://securvote.vercel.app) • [Video](https://youtu.be/4nAzh8N8cbA)
+  - 🔗 [Website (Demo Available upon clicking Login)](https://securvote.vercel.app) • [Video](https://youtu.be/4nAzh8N8cbA) • [About (More Information)](https://securvote.vercel.app/about)
 
 - **📱 CSE Dept Attendance System (Ongoing)**  
   - Time-synced QR-based student-led attendance with HMAC security.  

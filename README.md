@@ -23,6 +23,36 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 <a href="mailto:sai.saip2005@gmail.com"><img src="https://img.shields.io/badge/Gmail-red?logo=gmail&logoColor=white" /></a>
 
 ---
+## 🚀 Projects
+
+- **🔐 SecUrVote**  
+  - RSA-encrypted voting system with HMAC-secured Magic IDs for vote uniqueness.  
+  - PBKDF2-based auth, OTP login, and immutable blockchain in Java + MongoDB.  
+  - Dockerized modular backend; deployed on Vercel.  
+  - 🥇 Won 1st prize at Encender (CSE Dept Project Expo).  
+  - 🔗 [Website (Demo Available upon clicking Login)](https://securvote.vercel.app) • [Video](https://youtu.be/4nAzh8N8cbA)
+
+- **📱 CSE Dept Attendance System (Ongoing)**  
+  - Time-synced QR-based student-led attendance with HMAC security.  
+  - Proxy prevention, OD workflows, and real-time notifications.  
+  - Tech stack: Spring Boot, Flask, Redis, MongoDB, Cassandra, Docker.  
+  - Code release planned post-deployment.
+
+- **🧠 InterVueX – Smart Hiring Platform**  
+  - Resume + rubric-based AI interview question generation.  
+  - Live feedback, coding assessments with Judge0, face detection.  
+  - Real-time sentiment analysis & summary from audio.  
+  - 🥇 Won 1st place at InnovateX (national level hackathon with 100+ teams).
+
+- **🌐 PeerLearn – P2P Learning Platform**  
+  - Gamified learning using in-app currency (Stars).  
+  - Adaptive roadmaps based on top-user contributions.  
+  - Built in 24h during Envision SSN.
+
+- **💻 Other Notables**  
+  - Railway reservation system in C.  
+  - Facial recognition-based missing persons finder (high school project).  
+---
 ## 🧠 Programming Languages
 
 | C | Java | Python | MySQL |

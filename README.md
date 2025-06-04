@@ -14,6 +14,7 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 - Applied Machine Learning & Natural Language Processing  
 - Cryptography & Blockchain Concepts  
 - Distributed Systems & Cloud Infrastructure (Learning)
+- Competitive Programming & Algorithms  
 
 ---
 
@@ -94,29 +95,3 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 
 ---
 
-## 🛠 Technical Skills
-
-**Programming Languages**  
-C, Java, Python, SQL  
-
-**Frameworks & Libraries**  
-Spring Boot, Flask, Scikit-learn, Keras, NLTK  
-
-**Databases & Cloud**  
-MongoDB, PostgreSQL, MySQL, Redis, Cassandra, Supabase, Docker, Cloud Hosting (AWS, Railway)  
-
-**Tools & Platforms**  
-Git, GitHub, JetBrains IDEs, MongoDB Compass, Postman, Figma, Canva, Linux  
-
----
-
-## 🧭 Interests
-
-- Scalable Backend Architectures  
-- Competitive Programming & Algorithms  
-- Blockchain & Secure Systems  
-- Machine Learning & AI in Production  
-- UX-Oriented Technical Design  
-
-
----

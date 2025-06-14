@@ -86,6 +86,9 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AvGeeky&layout=compact&theme=github_dark&langs_count=6&hide=javascript,CMake,CSS,HTML" />
 </p>
 
+<p align="center">
+ [GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=radical&hide_border=true)
+</p>
 ---
 ---
 ## 🧠 Research & Publications

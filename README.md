@@ -87,8 +87,12 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 </p>
 
 <p align="center">
- [GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=radical&hide_border=true)
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=radical&hide_border=true" alt="GitHub Streak" />
 </p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AvGeeky&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
+</p>
+
 ---
 ---
 ## 🧠 Research & Publications
@@ -97,4 +101,6 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 - **ILSUM 2024** – Multilingual text summarization using advanced NLG models like T5 and Gemini 1.0 Pro.
 
 ---
-
+<p align="center">
+  <img src="https://profile-counter.glitch.me/AvGeeky/count.svg" alt="Visitor Count" />
+</p>

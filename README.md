@@ -87,7 +87,7 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=AvGeeky&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />

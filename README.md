@@ -25,35 +25,168 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 <a href="mailto:sai.saip2005@gmail.com"><img src="https://img.shields.io/badge/Gmail-red?logo=gmail&logoColor=white" /></a>
 
 ---
-## Projects
+# 🚀 Projects
 
-- ** SecUrVote**  
-  - RSA-encrypted voting system with HMAC-secured Magic IDs for vote uniqueness.  
-  - PBKDF2-based auth, OTP login, and immutable blockchain in Java + MongoDB.  
-  - Dockerized modular backend; deployed on Vercel.  
-  - 🥇 Won 1st prize at Encender (CSE Dept Project Expo).  
-  - 🔗 [Website (Demo Available upon clicking Login)](https://securvote.vercel.app) • [Video](https://youtu.be/4nAzh8N8cbA) • [About (More Information)](https://securvote.vercel.app/about)
+A collection of production-grade systems, and large-scale backend applications focused on **distributed systems, real-time data processing, security, and infrastructure engineering**.
 
-- ** CSE Dept Attendance System (Ongoing)**  
-  - Time-synced QR-based student-led attendance with HMAC security.  
-  - Proxy prevention, OD workflows, and real-time notifications.  
-  - Tech stack: Spring Boot, Flask, Redis, MongoDB, Cassandra, Docker.  
-  - Code release planned post-deployment.
+Most of these systems are **deployed in real environments**, built with an emphasis on correctness, scalability, observability, and clean system design.
 
-- ** InterVueX – Smart Hiring Platform**  
-  - Resume + rubric-based AI interview question generation.  
-  - Live feedback, coding assessments with Judge0, face detection.  
-  - Real-time sentiment analysis & summary from audio.  
-  - 🥇 Won 1st place at InnovateX (national level hackathon with 100+ teams).
+I have heavily been involved with the entire system design along with participating heavuly in backend developemt :)
 
-- ** PeerLearn – P2P Learning Platform**  
-  - Gamified learning using in-app currency (Stars).  
-  - Adaptive roadmaps based on top-user contributions.  
-  - Built in 24h during Envision SSN.
+---
 
-- ** Other Notables**  
-  - Railway reservation system in C.  
-  - Facial recognition-based missing persons finder (high school project).  
+## 🚌 Real-Time Bus Tracking Platform  
+**Deployed for SSN College & SNU Chennai | 2025**
+
+A real-time mobility tracking backend serving thousands of concurrent users during peak traffic hours.
+
+### Highlights
+- Real-time location tracking system serving **3,000+ concurrent users**
+- Redis-backed in-memory state engine for millisecond-level reads
+- Hot-path isolation to remove databases from live request handling
+- Concurrent GPS ingestion from heterogeneous vendor APIs
+- Adaptive polling windows based on freshness and traffic load
+- Full on-prem deployment with production observability
+
+### Architecture Concepts
+- Keyed in-memory state model (busId → live location)
+- Last-write-wins update semantics
+- Stateless backend services
+- Read-heavy optimization using Redis as authoritative state store
+
+**Tech Stack**  
+`Java • Spring Boot • Redis • PostgreSQL • Docker • NGINX • Prometheus • Grafana`
+
+---
+
+## 💳 kPaymentPipeline — Payment Management & Reconciliation System  
+**Deployed for SSN Invente Technical Fest | 2025**
+
+A Kafka-based real-time payment reconciliation platform built to process thousands of digital transactions with strong correctness guarantees.
+
+### Highlights
+- Event-driven reconciliation pipeline using Kafka
+- Stateful stream processing with joins, aggregations, and windowing
+- Redis-backed email ingestion system for payment receipt detection
+- Idempotent processing to prevent duplicate reconciliation
+- Load-tested at **50,000+ records per minute** using K6
+- Fully containerized production deployment
+
+### Architecture Concepts
+- Kafka producers and consumers
+- Kafka Streams with time-windowed joins
+- Redis-backed deduplication
+- Transaction reconciliation pipelines
+- Observability and throughput benchmarking
+
+**Tech Stack**  
+`Java • Spring Boot • Apache Kafka • Kafka Streams • Redis • PostgreSQL • Docker • K6`
+
+🔗 https://github.com/AvGeeky/kpaymentpipeline
+
+---
+
+## 🧾 AttendEz — Secure Multi-Mode Attendance Platform  
+**Deployed for SSN College | 2025**
+
+A production-grade attendance system designed to eliminate proxy marking and manual verification overhead.
+
+### Features
+- Dynamic time-rotating QR codes
+- One-time attendance codes for quick sessions
+- Manual mode with teacher overrides
+- Cryptographic device-bound verification
+- Live attendance dashboards
+- On-prem deployment
+
+### Security Model
+- HMAC-based authentication using device-bound secrets
+- Time-limited code expiry
+- Replay attack prevention
+- Redis-managed verification windows
+
+### Architecture Concepts
+- Redis for real-time verification state
+- MongoDB for persistent academic records
+- Time-based validation engine
+- Webhook-driven live updates
+
+**Tech Stack**  
+`Java • Spring Boot • Redis • MongoDB • Docker • NGINX • JUnit • Jenkins`
+
+🔗 https://github.com/AvGeeky/AttendanceSystemBE
+🔗 Demo: https://www.youtube.com/watch?v=YFHxfV337GY
+
+---
+
+## 🔐 SecUrVote — Cryptographically Verifiable Voting Platform
+
+A secure digital voting system focused on voter authenticity, privacy, and transparent verification.
+
+### Features
+- RSA-based vote encryption
+- HMAC-secured Magic IDs for vote uniqueness
+- PBKDF2-based authentication
+- OTP login flow
+- Immutable blockchain-style vote ledger
+- Public vote verification interface
+
+### Architecture Concepts
+- Two-phase cryptographic voting
+- Anonymous ballot storage
+- Tamper-evident ledger design
+- Modular backend services
+
+**Tech Stack**  
+`Java • Spring Boot • MongoDB • Cryptography • Docker`
+
+🏆 **1st Prize — Encender Project Expo (CSE Department)**
+
+🔗  
+- Website: https://securvote.vercel.app  
+- Demo Video: https://youtu.be/4nAzh8N8cbA  
+- About: https://securvote.vercel.app/about  
+
+## 🎤 InterVueX — AI-Powered Smart Hiring Platform
+
+An intelligent interview platform combining technical assessment with behavioral analysis.
+
+### Features
+- Resume- and rubric-driven question generation
+- Live coding interviews via Judge0
+- Face detection and audio processing
+- Sentiment analysis and automated summaries
+
+🏆 **1st Place — InnovateX National Hackathon (100+ teams)**
+
+**Tech Stack**  
+`Python • AI/ML • Judge0 • Audio Processing`
+
+---
+
+## 🎓 PeerLearn — Peer-to-Peer Learning Platform
+
+A collaborative learning ecosystem focused on incentivized education.
+
+### Features
+- Gamified in-app currency system (*Stars*)
+- Community-generated learning roadmaps
+- Dynamic teacher–learner role switching
+
+Built within **24 hours** during Envision SSN.
+
+**Tech Stack**  
+`Spring Boot • Web • Gamification Systems`
+
+---
+
+## 🧩 Other Notable Projects
+
+- 🚆 **Railway Reservation System (C)** — Seat allocation, scheduling, and ticket workflows  
+- 🧍 **Missing Persons Identification System** — Facial recognition–based detection platform (high school project)
+
+---
+
 ---
 ## Programming Languages
 

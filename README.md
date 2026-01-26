@@ -7,6 +7,22 @@ I'm an undergraduate Computer Science and Engineering student passionate about b
 I enjoy solving real-world problems with thoughtful engineering and clean, efficient code.
 
 ---
+---
+
+## GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AvGeeky&layout=compact&theme=github_dark&langs_count=6&hide=javascript,CMake,CSS,HTML" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AvGeeky&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
+</p>
+
+---
 
 ## Areas of Focus
 
@@ -212,22 +228,7 @@ Built within **24 hours** during Envision SSN.
 |:---:|:------:|:-----:|:---------:|:----------------:|:-------:|:-----:|:-----:|
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/JetBrains_company_logo.svg" alt="JetBrains" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Compass" height="40"/> | <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="Postman" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Canva_Logo.svg" alt="Canva" height="40"/> |
 
----
 
-## GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AvGeeky&layout=compact&theme=github_dark&langs_count=6&hide=javascript,CMake,CSS,HTML" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AvGeeky&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
-</p>
-
----
 ---
 ## Research & Publications
 

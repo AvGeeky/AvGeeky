@@ -125,7 +125,7 @@ A production-grade attendance system designed to eliminate proxy marking and man
 - Redis for real-time verification state
 - MongoDB for persistent academic records
 - Time-based validation engine
-- Webhook-driven live updates
+- SSE-driven live updates
 
 **Tech Stack**  
 `Java • Spring Boot • Redis • MongoDB • Docker • NGINX • JUnit • Jenkins`

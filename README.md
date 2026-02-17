@@ -12,10 +12,6 @@ I enjoy solving real-world problems with thoughtful engineering and clean, effic
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AvGeeky&layout=compact&theme=github_dark&langs_count=6&hide=javascript,CMake,CSS,HTML" />
-</p>
-
-<p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 <p align="center">

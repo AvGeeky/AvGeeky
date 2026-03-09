@@ -66,6 +66,7 @@ A high-performance real-time mobility tracking backend designed to support thous
 - **Concurrent GPS ingestion** from multiple heterogeneous vendor APIs
 - **Adaptive polling system** based on data freshness and load
 - **Full on-premise deployment** with production observability stack
+-  **Concurrent GPS ingestion:** ~20 vendor GPS APIs are polled in parallel using Java threads (ExecutorService/CommandLineRunner), with **time-of-day adaptive polling intervals** to prevent cascading delays if a provider responds slowly.
 
 ---
 
@@ -149,7 +150,7 @@ Campus transport usage spikes dramatically during commute windows.
 To handle this load, the platform uses:
 
 - **Containerized services** for predictable deployments
-- **Load-balanced API servers**
+- **Each GPS API (~20 individual calls) are done using a seperate Java Thread using CommandLine Runner or Executor service with dynamic sleep times based on the time of the day for no cascading delays incase one api takes time for responding.**
 - **Hot-path optimization** eliminating database reads
 - **Adaptive GPS polling intervals** to reduce unnecessary upstream requests
 

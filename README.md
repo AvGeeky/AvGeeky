@@ -48,7 +48,7 @@ I have heavily been involved with the entire system design along with participat
 ---
 
 ## 🚌 Real-Time Bus Tracking Platform  
-**Deployed for SSN College & SNU Chennai | 2025**
+**Built and Deployed under official capacity for SSN College of Engineering & Shiv Nadar University Chennai Students and Faculty| 2025**
 
 **Link [http://bustracker.snuchennai.edu.in/]**
 

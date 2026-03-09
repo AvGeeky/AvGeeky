@@ -47,32 +47,207 @@ I have heavily been involved with the entire system design along with participat
 
 ---
 
-## 🚌 Real-Time Bus Tracking Platform  
-**Built and Deployed under official capacity for SSN College of Engineering & Shiv Nadar University Chennai Students and Faculty| 2025**
+## 🚌 Real-Time Bus Tracking Platform
+**Official deployment for SSN College of Engineering & Shiv Nadar University Chennai**  
+*Production system serving students and faculty | 2025*
 
-**Link [http://bustracker.snuchennai.edu.in/]**
+🔗 **Live System:** http://bustracker.snuchennai.edu.in/
 
-
-A real-time mobility tracking backend serving thousands of concurrent users during peak traffic hours.
-
-### Highlights
-- Real-time location tracking system serving **3,000+ concurrent users**
-- Redis-backed in-memory state engine for millisecond-level reads
-- Hot-path isolation to remove databases from live request handling
-- Concurrent GPS ingestion from heterogeneous vendor APIs
-- Adaptive polling windows based on freshness and traffic load
-- Full on-prem deployment with production observability
-
-### Architecture Concepts
-- Keyed in-memory state model (busId → live location)
-- Last-write-wins update semantics
-- Stateless backend services
-- Read-heavy optimization using Redis as authoritative state store
-
-**Tech Stack**  
-`Java • Spring Boot • Redis • PostgreSQL • Docker • NGINX • Prometheus • Grafana`
+A high-performance real-time mobility tracking backend designed to support thousands of concurrent users during peak campus commute hours.
 
 ---
+
+# 🚀 Key Highlights
+
+- **3,000+ concurrent users** supported during peak traffic hours
+- **Sub-50ms live location propagation** from ingestion → map render
+- **Redis-backed in-memory state engine** for millisecond reads
+- **Hot-path isolation** removing databases from live request paths
+- **Concurrent GPS ingestion** from multiple heterogeneous vendor APIs
+- **Adaptive polling system** based on data freshness and load
+- **Full on-premise deployment** with production observability stack
+
+---
+
+# 🏗 System Architecture
+
+```text
+                 +----------------------+
+                 |   GPS Hardware       |
+                 | (Multiple Vendors)   |
+                 +----------+-----------+
+                            |
+                            |
+                     GPS API Polling
+                            |
+                            v
+                +-----------------------+
+                |   Spring Boot Backend |
+                |  (Location Processor) |
+                +-----------+-----------+
+                            |
+                Normalize / Clean GPS Data
+                            |
+                            v
+                 +----------------------+
+                 |        Redis         |
+                 | In-Memory Live State |
+                 | busId → GPS location |
+                 | Caches student bus   |
+                 | allocation and exam/ |
+                 |  breakdown overrides |
+                 +----------+-----------+
+                            |
+             +--------------+--------------+
+             |                             |
+             v                             v
+     +---------------+            +---------------+
+     |  Mobile App   |            |  Web Client   |
+     | (Students)    |            | (Tracking UI) |
+     +---------------+            +---------------+
+
+         Monitoring & Observability Layer
+      Prometheus → Metrics → Grafana Dashboards
+```
+## Performance at Scale
+
+The system is engineered to support **thousands of simultaneous users** during campus rush hours.
+
+### Key Optimizations
+
+- **Redis Sets** acting as a high-speed in-memory state engine
+- **No database access in the live request path**
+- **Read-heavy endpoints optimized for in-memory access**
+
+### Performance Characteristics
+
+- **<50ms location propagation latency**
+- Smooth UI updates during **morning and evening traffic spikes**
+- Stable performance during **high concurrency bursts**
+
+---
+
+## Smart Location Processing
+
+Campus buses use **different GPS hardware vendors**, producing inconsistent and noisy data streams.
+
+The **Spring Boot backend acts as a normalization layer**, responsible for:
+
+- Aggregating GPS signals from heterogeneous vendor APIs
+- Cleaning noisy or inconsistent location updates
+- Smoothing position data before publishing to clients
+- Converting all GPS inputs into a **single unified location format**
+
+The backend currently exposes **~60 API endpoints** used by mobile and web applications.
+
+---
+
+## Designed for Rush Hour
+
+Campus transport usage spikes dramatically during commute windows.
+
+To handle this load, the platform uses:
+
+- **Containerized services** for predictable deployments
+- **Load-balanced API servers**
+- **Hot-path optimization** eliminating database reads
+- **Adaptive GPS polling intervals** to reduce unnecessary upstream requests
+
+These techniques ensure the system remains stable even when **thousands of users open the app simultaneously**.
+
+---
+
+## 📊 Observability & Reliability
+
+The system runs **entirely on university infrastructure** with full operational visibility.
+
+### Monitoring Stack
+
+- **Prometheus** → system and application metrics
+- **Grafana** → real-time operational dashboards
+- **Custom alert pipelines**
+
+Operational alerts allow issues to be **detected and resolved within minutes**, often before users notice service disruption.
+
+---
+
+## System Design Decisions
+
+### Why Redis as the Live State Store?
+
+The application is **read-heavy**, with thousands of clients requesting the same bus locations.
+
+Redis enables:
+
+- **In-memory reads (microsecond latency)**
+- Efficient keyed access (`busId → location`)
+- High throughput during traffic spikes
+
+Using Redis prevents the primary database from becoming a bottleneck.
+
+---
+
+### Why Hot-Path Isolation?
+
+Real-time location endpoints **never touch the SQL database**.
+
+Instead:
+
+1. GPS updates are processed by the backend
+2. Cleaned data is written to Redis
+3. Client requests read directly from Redis
+
+#### Benefits
+
+- Eliminates disk I/O during peak load
+- Ensures predictable low latency
+- Prevents cascading database failures
+
+---
+
+### Stateless Backend Design
+
+Backend services are designed to be **stateless**, enabling:
+
+- Horizontal scaling via containers
+- Easy rolling deployments
+- Simplified fault recovery
+
+All shared state is **externalized into Redis**.
+
+---
+
+## Tech Stack
+## 🧰 Tech Stack
+
+- **Java**
+- **Spring Boot**
+- **Redis**
+- **PostgreSQL**
+- **Docker**
+- **NGINX**
+- **Prometheus**
+- **Grafana**
+
+---
+
+## 📌 Deployment
+
+The platform is deployed **on-premise within university infrastructure**, providing:
+
+- **Low-latency internal network access**
+- **Full operational control over infrastructure**
+- **Secure integration with campus systems**
+
+---
+
+## 📈 Impact
+
+- Serves **thousands of students and faculty daily**
+- Provides **real-time visibility into campus transport routes**
+- Handles **large traffic spikes reliably during peak commute hours**
+
+
 
 ## 💳 kPaymentPipeline — Payment Management & Reconciliation System  
 **Deployed for SSN Invente Technical Fest | 2025**

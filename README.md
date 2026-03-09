@@ -50,6 +50,9 @@ I have heavily been involved with the entire system design along with participat
 ## 🚌 Real-Time Bus Tracking Platform  
 **Deployed for SSN College & SNU Chennai | 2025**
 
+**Link [http://bustracker.snuchennai.edu.in/]**
+
+
 A real-time mobility tracking backend serving thousands of concurrent users during peak traffic hours.
 
 ### Highlights

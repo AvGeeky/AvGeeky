@@ -172,52 +172,6 @@ Operational alerts allow issues to be **detected and resolved within minutes**, 
 
 ---
 
-## System Design Decisions
-
-### Why Redis as the Live State Store?
-
-The application is **read-heavy**, with thousands of clients requesting the same bus locations.
-
-Redis enables:
-
-- **In-memory reads (microsecond latency)**
-- Efficient keyed access (`busId → location`)
-- High throughput during traffic spikes
-
-Using Redis prevents the primary database from becoming a bottleneck.
-
----
-
-### Why Hot-Path Isolation?
-
-Real-time location endpoints **never touch the SQL database**.
-
-Instead:
-
-1. GPS updates are processed by the backend
-2. Cleaned data is written to Redis
-3. Client requests read directly from Redis
-
-#### Benefits
-
-- Eliminates disk I/O during peak load
-- Ensures predictable low latency
-- Prevents cascading database failures
-
----
-
-### Stateless Backend Design
-
-Backend services are designed to be **stateless**, enabling:
-
-- Horizontal scaling via containers
-- Easy rolling deployments
-- Simplified fault recovery
-
-All shared state is **externalized into Redis**.
-
----
-
 ## Tech Stack
 ## 🧰 Tech Stack
 
@@ -229,24 +183,8 @@ All shared state is **externalized into Redis**.
 - **NGINX**
 - **Prometheus**
 - **Grafana**
-
+  
 ---
-
-## 📌 Deployment
-
-The platform is deployed **on-premise within university infrastructure**, providing:
-
-- **Low-latency internal network access**
-- **Full operational control over infrastructure**
-- **Secure integration with campus systems**
-
----
-
-## 📈 Impact
-
-- Serves **thousands of students and faculty daily**
-- Provides **real-time visibility into campus transport routes**
-- Handles **large traffic spikes reliably during peak commute hours**
 
 
 

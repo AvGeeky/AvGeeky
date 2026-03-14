@@ -1,6 +1,6 @@
 # Hi, I'm Saipranav M
 
-<a href="https://drive.google.com/file/d/12ZR5_IPAZ43uYl_6m7Yq3tpwktaMTW0h/view?usp=sharing"><img src="https://img.shields.io/badge/Resume-Link%20to%20view%20in%20Google%20Drive-blue" /></a>
+<a href="https://drive.google.com/file/d/12ZR5_IPAZ43uYl_6m7Yq3tpwktaMTW0h/view?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/Resume-Link%20to%20view%20in%20Google%20Drive-blue" /></a>
 
 Welcome to my GitHub.
 

@@ -9,16 +9,14 @@ I'm an undergraduate Computer Science and Engineering student passionate about b
 I enjoy solving real-world problems with thoughtful engineering and clean, efficient code.
 
 ---
----
+
 
 ## GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AvGeeky&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
-</p>
+
 
 ---
 

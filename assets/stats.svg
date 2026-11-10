@@ -1,21 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="190" viewBox="0 0 1000 190">
 <style>.f{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.n{font-size:34px;font-weight:700;fill:#ede9fe}.l{font-size:13px;fill:#a78bfa}.s{font-size:13px;fill:#c9d1d9}</style>
-<rect x="1" y="1" width="998" height="188" rx="14" fill="#0d1117" stroke="#2e1065" stroke-width="1.5"/>
-<text class="f n" x="40" y="70">21</text><text class="f l" x="40" y="94">public repos</text>
-<text class="f n" x="275" y="70">34</text><text class="f l" x="275" y="94">followers</text>
-<text class="f n" x="510" y="70">3+</text><text class="f l" x="510" y="94">yrs on github</text>
-<text class="f n" x="745" y="70">4</text><text class="f l" x="745" y="94">prod systems</text>
-<text class="f l" x="40" y="128">top languages (by repo count)</text>
-<rect x="40.0" y="138" width="429.9" height="12" rx="3" fill="#b07219"/>
-<text class="f s" x="40.0" y="172">Java</text>
-<rect x="472.9" y="138" width="105.2" height="12" rx="3" fill="#f1e05a"/>
-<text class="f s" x="472.9" y="172">JavaScript</text>
-<rect x="581.2" y="138" width="105.2" height="12" rx="3" fill="#8b8b8b"/>
-<text class="f s" x="581.2" y="172">C</text>
-<rect x="689.4" y="138" width="51.1" height="12" rx="3" fill="#3572A5"/>
-<text class="f s" x="689.4" y="172">Python</text>
-<rect x="743.5" y="138" width="51.1" height="12" rx="3" fill="#00B4AB"/>
-<text class="f s" x="743.5" y="172">Dart</text>
-<rect x="797.6" y="138" width="159.4" height="12" rx="3" fill="#7c3aed"/>
-<text class="f s" x="797.6" y="172">Other</text>
+<rect x="1" y="1" width="998" height="100" rx="14" fill="#0d1117" stroke="#2e1065" stroke-width="1.5"/>
+<text class="f l" x="40" y="28">top languages</text>
+<rect x="40.0" y="38" width="429.9" height="12" rx="3" fill="#b07219"/>
+<text class="f s" x="40.0" y="72">Java</text>
+<rect x="472.9" y="38" width="105.2" height="12" rx="3" fill="#f1e05a"/>
+<text class="f s" x="472.9" y="72">JavaScript</text>
+<rect x="581.2" y="38" width="105.2" height="12" rx="3" fill="#8b8b8b"/>
+<text class="f s" x="581.2" y="72">C</text>
+<rect x="689.4" y="38" width="51.1" height="12" rx="3" fill="#3572A5"/>
+<text class="f s" x="689.4" y="72">Python</text>
+<rect x="743.5" y="38" width="51.1" height="12" rx="3" fill="#00B4AB"/>
+<text class="f s" x="743.5" y="72">Dart</text>
+<rect x="797.6" y="38" width="159.4" height="12" rx="3" fill="#7c3aed"/>
+<text class="f s" x="797.6" y="72">Other</text>
 </svg>

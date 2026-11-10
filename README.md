@@ -67,16 +67,54 @@ public class Saipranav {
 - Admin dashboard: fleet monitoring, breakdown handling, hot-swappable route allocation, broadcast/targeted notifications, RBAC
 - Fully **on-prem**: NGINX, Docker Compose, Prometheus, Grafana and Loki with automated alerts
 
+
 ```mermaid
 flowchart LR
-    G[GPS vendors<br/>~20 APIs] -->|parallel polling| S[Spring Boot<br/>normalise and smooth]
-    S --> R[(Redis<br/>live state)]
-    R --> M[Mobile app]
-    R --> W[Web client]
-    S -.-> P[Prometheus]
-    P -.-> GR[Grafana and Loki]
-```
+    subgraph Providers["GPS providers"]
+        P1["JTrack feed"]
+        P2["Paizo feed"]
+        P3["NMT fleet API"]
+        P4["Tata API"]
+        P5["GJ Travels feed"]
+        P6["NeoTrack API"]
+    end
 
+    subgraph Backend["Spring Boot backend"]
+        F["Feed workers<br/>one thread per feed"]
+        NT["NeoTrack workers<br/>one per bus"]
+        N["Normaliser<br/>schema, IST time, coordinate checks"]
+        API["REST API"]
+        NS["Notification service"]
+    end
+
+    R[("Redis<br/>live locations, assignment cache,<br/>notifications, overrides, tokens")]
+    DB[("PostgreSQL<br/>source of truth")]
+    NGX["NGINX"]
+    MOB["Mobile app<br/>(students)"]
+    WEB["Web client<br/>(tracking UI)"]
+    OBS["Prometheus, then Grafana"]
+
+    P1 --> F
+    P2 --> F
+    P3 --> F
+    P4 --> F
+    P5 --> F
+    P6 --> NT
+    F --> N
+    NT --> N
+    N -->|"HSET"| R
+
+    MOB --> NGX
+    WEB --> NGX
+    NGX --> API
+    API -->|"reads"| R
+    API -.->|"cache miss only"| DB
+    API -->|"cache fill"| R
+    API --> NS
+    NS -->|"reads and writes"| R
+
+    OBS -. "scrapes /actuator/prometheus" .-> Backend
+```
 `Java` `Spring Boot` `Redis` `PostgreSQL` `Docker` `NGINX` `Prometheus` `Grafana`
 
 ---
@@ -91,6 +129,69 @@ flowchart LR
 | Ops | Prometheus, Grafana, NGINX-fronted VPS | NGINX gateway, SSL, Prometheus/Grafana/Loki, Cloudflare |
 | Code | [kpaymentpipeline](https://github.com/AvGeeky/kpaymentpipeline_invente2025PaymentSystem) | [SSNInventePaymentSystem_Backend2026](https://github.com/AvGeeky/SSNInventePaymentSystem_Backend2026) |
 
+```mermaid
+flowchart LR
+
+    Client["External Client (This Repo)"]
+    InternalClient["Internal Client not a part of this repo(Admin)"]
+
+    subgraph Edge["Edge / Gateway"]
+        Nginx["Nginx Reverse Proxy<br/>(SSL, CORS, Rate Limit)"]
+    end
+
+    subgraph API["API Layer"]
+        ExternalController["ExternalController<br/>(Port 8080)<br/>Payment System Backend - This repo"]
+        AdminAPI["Admin Backend - Not this Repo <br/>(Port 4000)"]
+    end
+
+    subgraph Services["Service Layer"]
+        ExternalService["ExternalControllerReceiverService"]
+    end
+
+    subgraph Persistence["Persistence Layer"]
+        MyBatisMappers["MyBatis Mappers"]
+        PostgreSQL[("PostgreSQL")]
+    end
+
+    Client -->|HTTPS /api/| Nginx
+    InternalClient -->|HTTPS /fileapi/| Nginx
+
+    Nginx -->|Proxy Pass| ExternalController
+    Nginx -->|Proxy Pass - Strip fileapi prefix| AdminAPI
+
+    ExternalController --> ExternalService
+    ExternalService --> MyBatisMappers
+    AdminAPI --> PostgreSQL
+    MyBatisMappers --> PostgreSQL
+
+    subgraph Async["Asynchronous Email Pipeline"]
+        VerifPoller["PaymentVerificationPoller<br/>@Async verificationPollerExecutor"]
+        ReminderPoller["ReminderEmailPoller<br/>@Async reminderPollerExecutor"]
+        RejectionPoller["RejectionEmailPoller<br/>@Async rejectionPollerExecutor"]
+        RedisStream[("Redis Stream<br/>invente:payments:verified_stream")]
+        Worker["PaymentEmailWorker<br/>StreamListener"]
+        Sweeper["PaymentStreamSweeper<br/>(Poison Pill Protection)"]
+        EmailService["TicketEmailSenderService"]
+    end
+
+    PostgreSQL --> VerifPoller
+    PostgreSQL --> ReminderPoller
+    PostgreSQL --> RejectionPoller
+
+    VerifPoller --> RedisStream
+    ReminderPoller --> RedisStream
+    RejectionPoller --> RedisStream
+
+    RedisStream --> Worker
+    Sweeper --> RedisStream
+    Sweeper --> Worker
+
+    Worker --> MyBatisMappers
+    Worker --> EmailService
+
+    EmailService --> SMTP[("SMTP")]
+
+```
 ---
 
 ### AttendEz: secure multi-mode attendance

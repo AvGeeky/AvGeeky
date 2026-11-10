@@ -22,15 +22,16 @@
 <a href="https://drive.google.com/file/d/1ZIh0Wfvmlf-RY3_MEJmrkvA8kn-d52zm/view?usp=sharing"><img src="https://img.shields.io/badge/Resume-View_PDF-success?style=for-the-badge&logo=googledrive&logoColor=white"/></a>
 <a href="http://bustracker.snuchennai.edu.in/"><img src="https://img.shields.io/badge/Live_Project-Bus_Tracker-orange?style=for-the-badge&logo=googlemaps&logoColor=white"/></a>
 
+<a href="https://github.com/AvGeeky?tab=repositories"><img src="https://img.shields.io/github/followers/AvGeeky?style=for-the-badge&logo=github&color=7c3aed&labelColor=0d1117"/></a>
+<a href="https://github.com/AvGeeky?tab=repositories"><img src="https://img.shields.io/github/stars/AvGeeky?style=for-the-badge&logo=github&color=7c3aed&labelColor=0d1117"/></a>
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=AvGeeky&label=Profile%20views&color=0e75b6&style=flat" alt="views"/>
-<img src="https://img.shields.io/github/followers/AvGeeky?style=flat&logo=github&label=Followers"/>
-<img src="https://img.shields.io/github/stars/AvGeeky?style=flat&logo=github&label=Stars"/>
+<!-- <img src="https://img.shields.io/github/followers/AvGeeky?style=flat&logo=github&label=Followers"/>
+<img src="https://img.shields.io/github/stars/AvGeeky?style=flat&logo=github&label=Stars"/> -->
 
 </div>
 
-## 👋 About me
+## About me
 
 I'm a **B.E. Computer Science** student at **SSN College of Engineering, Chennai** (CGPA 8.47) who likes building backends that actually get used. Several of my systems run in production for thousands of students at **SSN** and **Shiv Nadar University Chennai**, and I'm usually involved in the whole thing, from system design through to deployment and monitoring.
 
@@ -44,25 +45,7 @@ public class Saipranav {
 }
 ```
 
----
-
-## 📊 GitHub at a glance
-
-<div align="center">
-
-<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
-
-<br/>
-
-<a href="https://github.com/AvGeeky?tab=repositories"><img src="https://img.shields.io/github/followers/AvGeeky?style=for-the-badge&logo=github&color=7c3aed&labelColor=0d1117"/></a>
-<a href="https://github.com/AvGeeky?tab=repositories"><img src="https://img.shields.io/github/stars/AvGeeky?style=for-the-badge&logo=github&color=7c3aed&labelColor=0d1117"/></a>
-<img src="https://img.shields.io/github/last-commit/AvGeeky/AttendanceSystemBE?style=for-the-badge&logo=git&color=7c3aed&labelColor=0d1117&label=last%20commit"/>
-
-</div>
-
-<img src="assets/divider.svg" width="100%" alt=""/>
-
-## 🧭 Experience
+## Experience
 
 | | Role | What I did |
 |---|---|---|
@@ -71,14 +54,14 @@ public class Saipranav {
 
 ---
 
-## 🚀 Featured projects
+## Featured projects
 
 ### 🚌 Real-Time Bus Tracking Platform
 **Production system for SSN College & SNU Chennai** · [🔴 Live](http://bustracker.snuchennai.edu.in/) · [Code](https://github.com/AvGeeky/SSN_SNUC_Bus_Assignment_Tracking_BackEnd)
 
 > Live transport tracking for **3,000+ users across 2 universities**, with **<500ms p90 API latency** under a 100-concurrent-user ramped load test.
 
-- Concurrent GPS ingestion from **~20 heterogeneous vendor APIs**, one thread per vendor with time-of-day adaptive polling, so one slow vendor never cascades
+- Concurrent GPS ingestion from **~24 independantly polled heterogeneous vendor APIs**, one thread per vendor with time-of-day adaptive polling, so one slow vendor never cascades
 - **Redis Hashes** state store with last-timestamp-wins semantics; **no database on the hot path**
 - Redis transactions and pipelining for multi-key updates and batched reads
 - Admin dashboard: fleet monitoring, breakdown handling, hot-swappable route allocation, broadcast/targeted notifications, RBAC
@@ -98,7 +81,7 @@ flowchart LR
 
 ---
 
-### 💳 Payment Pipelines for Invente (SSN's tech fest)
+### Payment Pipelines for Invente (SSN's tech fest)
 
 | | **Kafka Payment Pipeline (2025)** | **Redis Payment Pipeline (2026)** |
 |---|---|---|
@@ -110,7 +93,7 @@ flowchart LR
 
 ---
 
-### 🧾 AttendEz: secure multi-mode attendance
+### AttendEz: secure multi-mode attendance
 **Deployed at SSN College** · 🥈 *2nd Place, Encender 3.0 Project Expo 2026* · [Code](https://github.com/AvGeeky/AttendanceSystemBE) · [Demo ▶](https://www.youtube.com/watch?v=YFHxfV337GY)
 
 - Three modes: manual, one-time codes, **time-rotating QR**
@@ -122,17 +105,17 @@ flowchart LR
 
 ---
 
-### 🔐 SecUrVote: cryptographically verifiable voting
+### SecUrVote: cryptographically verifiable voting
 🥇 *1st Place, Encender 2.0 Project Expo 2025* · [Backend](https://github.com/AvGeeky/SecUrVote_BE) · [Frontend](https://github.com/AvGeeky/SecUrVote_Frontend) · [Site](https://securvote.vercel.app) · [Demo ▶](https://youtu.be/4nAzh8N8cbA)
 
 RSA vote encryption, HMAC-secured Magic IDs for uniqueness, PBKDF2 auth with OTP login, and an immutable blockchain-style ledger with public verification.
 
-### 🎤 InterVueX: AI-powered hiring
+### InterVueX: AI-powered hiring
 🥇 *1st Place, InnovateX National Hackathon (100+ teams)* · [Backend](https://github.com/AvGeeky/InterVueX-Backend)
 
 Resume- and rubric-driven question generation, live coding via Judge0, face detection, audio processing and sentiment analysis.
 
-### 🎓 PeerLearn: peer-to-peer learning
+### PeerLearn: peer-to-peer learning
 Built in **24 hours** at Envision SSN · [Backend](https://github.com/AvGeeky/PeerLearn_Backend)
 
 Gamified "Stars" currency, community roadmaps, and dynamic teacher/learner roles.
@@ -199,5 +182,22 @@ Gamified "Stars" currency, community roadmaps, and dynamic teacher/learner roles
 **Open to SDE / backend opportunities, so feel free to reach out.**
 
 <img src="assets/divider.svg" width="100%" alt=""/>
+
+</div>
+
+## At a glance
+
+<div align="center">
+
+<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
+
+<br/>
+
+</div>
+
+
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=AvGeeky&label=Profile%20views&color=0e75b6&style=flat" alt="views"/>
 
 </div>

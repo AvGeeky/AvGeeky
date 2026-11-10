@@ -536,12 +536,12 @@
 <text x="40" y="104" font-family="Courier New, monospace" font-size="58" font-weight="bold" fill="#ffffff" letter-spacing="3">SAIPRANAV M</text>
 <text x="43" y="107" font-family="Courier New, monospace" font-size="58" font-weight="bold" fill="#36bcf7" opacity=".35" letter-spacing="3">SAIPRANAV M</text>
 <text x="42" y="148" font-family="Courier New, monospace" font-size="22" fill="#39ff88" letter-spacing="2">BACKEND  /  SCALABLE  /  REAL-WORLD</text>
-<text x="42" y="184" font-family="Courier New, monospace" font-size="16" fill="#c8d2ff">Kafka · Redis · Spring Boot · AWS Glue · Docker</text>
-<rect x="42" y="206" width="144" height="30" fill="#0b1220" stroke="#36bcf7" stroke-width="2"/>
+<text x="42" y="184" font-family="Courier New, monospace" font-size="16" fill="#c8d2ff">Kafka · Redis · Java Spring Boot · Python · AWS · Docker</text>
+<!-- <rect x="42" y="206" width="144" height="30" fill="#0b1220" stroke="#36bcf7" stroke-width="2"/>
 <text x="54" y="227" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#ffd84d">3,000+ users</text>
 <rect x="198" y="206" width="164" height="30" fill="#0b1220" stroke="#36bcf7" stroke-width="2"/>
 <text x="210" y="227" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#ffd84d">50K events/min</text>
 <rect x="374" y="206" width="164" height="30" fill="#0b1220" stroke="#36bcf7" stroke-width="2"/>
-<text x="386" y="227" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#ffd84d">92% faster ETL</text>
+<text x="386" y="227" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#ffd84d">92% faster ETL</text> -->
 <rect x="42" y="250" width="12" height="4" fill="#39ff88"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
 </svg>

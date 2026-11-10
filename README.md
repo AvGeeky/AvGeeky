@@ -1,354 +1,202 @@
-# Hi, I'm Saipranav M
+<div align="center">
 
-<a href="https://drive.google.com/file/d/1ZIh0Wfvmlf-RY3_MEJmrkvA8kn-d52zm/view?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/Resume-Link%20to%20view%20in%20Google%20Drive-blue" /></a>
+<img src="assets/header.svg" alt="Saipranav M - Backend / Scalable / Real-World" width="100%"/>
 
-Welcome to my GitHub.
+<a href="https://github.com/AvGeeky">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Building+systems+that+serve+3%2C000%2B+real+users;Kafka+%C2%B7+Redis+%C2%B7+Spring+Boot+%C2%B7+AWS+Glue;Low-latency+backends+%E2%80%A2+Event-driven+design;Ex-SDE+Intern+@+Barclays+%F0%9F%8F%A6" alt="Typing SVG" />
+</a>
 
-I'm an undergraduate Computer Science and Engineering student passionate about building secure, scalable systems and exploring machine learning, system design, and backend development.
+<br/>
 
-I enjoy solving real-world problems with thoughtful engineering and clean, efficient code.
+<a href="https://www.linkedin.com/in/saipranav-m/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:sai.saip2005@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://drive.google.com/file/d/1ZIh0Wfvmlf-RY3_MEJmrkvA8kn-d52zm/view?usp=sharing"><img src="https://img.shields.io/badge/Resume-View_PDF-success?style=for-the-badge&logo=googledrive&logoColor=white"/></a>
+<a href="http://bustracker.snuchennai.edu.in/"><img src="https://img.shields.io/badge/Live_Project-Bus_Tracker-orange?style=for-the-badge&logo=googlemaps&logoColor=white"/></a>
 
----
+<br/><br/>
 
+<img src="https://komarev.com/ghpvc/?username=AvGeeky&label=Profile%20views&color=0e75b6&style=flat" alt="views"/>
+<img src="https://img.shields.io/github/followers/AvGeeky?style=flat&logo=github&label=Followers"/>
+<img src="https://img.shields.io/github/stars/AvGeeky?style=flat&logo=github&label=Stars"/>
 
-## GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AvGeeky&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
-
-
----
-
-## Areas of Focus
-
-- Backend Development & System Design  
-- Applied Machine Learning & Natural Language Processing  
-- Cryptography & Blockchain Concepts  
-- Distributed Systems & Cloud Infrastructure (Learning)
-- DevOps (Docker, Kubernetes, Jenkins, NGINX etc) (Learning)
-- Competitive Programming & Algorithms  
+</div>
 
 ---
 
-## Connect with me
+<div align="center">
 
-<a href="https://www.linkedin.com/in/saipranav-m/"><img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" /></a>
-<a href="mailto:sai.saip2005@gmail.com"><img src="https://img.shields.io/badge/Gmail-red?logo=gmail&logoColor=white" /></a>
+<img src="assets/profile-card.svg" width="100%" alt="saipranav@github terminal card"/>
 
----
-# 🚀 Projects
+</div>
 
-A collection of production-grade systems, and large-scale backend applications focused on **distributed systems, real-time data processing, security, and infrastructure engineering**.
+## 👋 About me
 
-Most of these systems are **deployed in real environments**, built with an emphasis on correctness, scalability, observability, and clean system design.
+I'm a **B.E. Computer Science** student at **SSN College of Engineering, Chennai** (CGPA 8.47) who likes building backends that actually get used. Several of my systems run in production for thousands of students at **SSN** and **Shiv Nadar University Chennai**, and I'm usually involved in the whole thing, from system design through to deployment and monitoring.
 
-I have heavily been involved with the entire system design along with participating heavuly in backend developemt :)
-
----
-
-## 🚌 Real-Time Bus Tracking Platform
-**Official deployment for SSN College of Engineering & Shiv Nadar University Chennai**  
-*Production system serving students and faculty | 2025*
-
-🔗 **Live System:** http://bustracker.snuchennai.edu.in/
-
-A high-performance real-time mobility tracking backend designed to support thousands of concurrent users during peak campus commute hours.
-
----
-
-# 🚀 Key Highlights
-
-- **3,000+ concurrent users** supported during peak traffic hours
-- **Sub-50ms live location propagation** from ingestion → map render
-- **Redis-backed in-memory state engine** for millisecond reads
-- **Hot-path isolation** removing databases from live request paths
-- **Concurrent GPS ingestion** from multiple heterogeneous vendor APIs
-- **Adaptive polling system** based on data freshness and load
-- **Full on-premise deployment** with production observability stack
--  **Concurrent GPS ingestion:** ~20 vendor GPS APIs are polled in parallel using Java threads (ExecutorService/CommandLineRunner), with **time-of-day adaptive polling intervals** to prevent cascading delays if a provider responds slowly.
-
----
-
-# 🏗 System Architecture
-
-```text
-                 +----------------------+
-                 |   GPS Hardware       |
-                 | (Multiple Vendors)   |
-                 +----------+-----------+
-                            |
-                            |
-                     GPS API Polling
-                            |
-                            v
-                +-----------------------+
-                |   Spring Boot Backend |
-                |  (Location Processor) |
-                +-----------+-----------+
-                            |
-                Normalize / Clean GPS Data
-                            |
-                            v
-                 +----------------------+
-                 |        Redis         |
-                 | In-Memory Live State |
-                 | busId → GPS location |
-                 | Caches student bus   |
-                 | allocation and exam/ |
-                 |  breakdown overrides |
-                 +----------+-----------+
-                            |
-             +--------------+--------------+
-             |                             |
-             v                             v
-     +---------------+            +---------------+
-     |  Mobile App   |            |  Web Client   |
-     | (Students)    |            | (Tracking UI) |
-     +---------------+            +---------------+
-
-         Monitoring & Observability Layer
-      Prometheus → Metrics → Grafana Dashboards
+```java
+public class Saipranav {
+    String role      = "Ex-SDE Intern @ Barclays (Jun-Jul 2026)";
+    String studying  = "B.E. CSE, SSN College of Engineering (2023-2027)";
+    String obsessed  = "latency, correctness, idempotency, observability";
+    String[] learning = { "Kubernetes", "Distributed systems", "Cloud infra" };
+    String funFact   = "Loves aviation!";
+}
 ```
-## Performance at Scale
-
-The system is engineered to support **thousands of simultaneous users** during campus rush hours.
-
-### Key Optimizations
-
-- **Redis Sets** acting as a high-speed in-memory state engine
-- **No database access in the live request path**
-- **Read-heavy endpoints optimized for in-memory access**
-
-### Performance Characteristics
-
-- **<50ms location propagation latency**
-- Smooth UI updates during **morning and evening traffic spikes**
-- Stable performance during **high concurrency bursts**
 
 ---
 
-## Smart Location Processing
+## 📊 GitHub at a glance
 
-Campus buses use **different GPS hardware vendors**, producing inconsistent and noisy data streams.
+<div align="center">
 
-The **Spring Boot backend acts as a normalization layer**, responsible for:
+<img src="assets/stats.svg" width="100%" alt="GitHub stats"/>
 
-- Aggregating GPS signals from heterogeneous vendor APIs
-- Cleaning noisy or inconsistent location updates
-- Smoothing position data before publishing to clients
-- Converting all GPS inputs into a **single unified location format**
+<br/>
 
-The backend currently exposes **~60 API endpoints** used by mobile and web applications.
+<a href="https://github.com/AvGeeky?tab=repositories"><img src="https://img.shields.io/github/followers/AvGeeky?style=for-the-badge&logo=github&color=7c3aed&labelColor=0d1117"/></a>
+<a href="https://github.com/AvGeeky?tab=repositories"><img src="https://img.shields.io/github/stars/AvGeeky?style=for-the-badge&logo=github&color=7c3aed&labelColor=0d1117"/></a>
+<img src="https://img.shields.io/github/last-commit/AvGeeky/AttendanceSystemBE?style=for-the-badge&logo=git&color=7c3aed&labelColor=0d1117&label=last%20commit"/>
 
----
+</div>
 
-## Designed for Rush Hour
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-Campus transport usage spikes dramatically during commute windows.
+## 🧭 Experience
 
-To handle this load, the platform uses:
-
-- **Containerized services** for predictable deployments
-- **Each GPS API (~20 individual calls) are done using a seperate Java Thread using CommandLine Runner or Executor service with dynamic sleep times based on the time of the day for no cascading delays incase one api takes time for responding.**
-- **Hot-path optimization** eliminating database reads
-- **Adaptive GPS polling intervals** to reduce unnecessary upstream requests
-
-These techniques ensure the system remains stable even when **thousands of users open the app simultaneously**.
+| | Role | What I did |
+|---|---|---|
+| 🏦 | **Former SDE Intern, Barclays** <br/>*Pune · Jun-Jul 2026* | Rebuilt a legacy dataset-comparison tool as a **distributed AWS Glue / PySpark** framework: **92% faster** (1.5 hrs to 7 min on 10M+ rows × 700+ columns). Supports Iceberg and Hive, schema-drift detection, parallel chunked-column processing, and a synthetic data generator. |
+| ⚙️ | **Full Stack Engineering Intern, Dexio LabX** <br/>*Chennai · Oct 2025-Feb 2026* | Built an **event-driven async job pipeline** (FastAPI, Redis lists, AsyncIO) with idempotent handling, exponential-backoff retries and **dead-letter-queue** routing for poison-pill tasks. Streamed ingestion for large LLM inputs. |
 
 ---
 
-## 📊 Observability & Reliability
+## 🚀 Featured projects
 
-The system runs **entirely on university infrastructure** with full operational visibility.
+### 🚌 Real-Time Bus Tracking Platform
+**Production system for SSN College & SNU Chennai** · [🔴 Live](http://bustracker.snuchennai.edu.in/) · [Code](https://github.com/AvGeeky/SSN_SNUC_Bus_Assignment_Tracking_BackEnd)
 
-### Monitoring Stack
+> Live transport tracking for **3,000+ users across 2 universities**, with **<500ms p90 API latency** under a 100-concurrent-user ramped load test.
 
-- **Prometheus** → system and application metrics
-- **Grafana** → real-time operational dashboards
-- **Custom alert pipelines**
+- Concurrent GPS ingestion from **~20 heterogeneous vendor APIs**, one thread per vendor with time-of-day adaptive polling, so one slow vendor never cascades
+- **Redis Hashes** state store with last-timestamp-wins semantics; **no database on the hot path**
+- Redis transactions and pipelining for multi-key updates and batched reads
+- Admin dashboard: fleet monitoring, breakdown handling, hot-swappable route allocation, broadcast/targeted notifications, RBAC
+- Fully **on-prem**: NGINX, Docker Compose, Prometheus, Grafana and Loki with automated alerts
 
-Operational alerts allow issues to be **detected and resolved within minutes**, often before users notice service disruption.
+```mermaid
+flowchart LR
+    G[GPS vendors<br/>~20 APIs] -->|parallel polling| S[Spring Boot<br/>normalise and smooth]
+    S --> R[(Redis<br/>live state)]
+    R --> M[Mobile app]
+    R --> W[Web client]
+    S -.-> P[Prometheus]
+    P -.-> GR[Grafana and Loki]
+```
 
----
-
-## Tech Stack
-## 🧰 Tech Stack
-
-- **Java**
-- **Spring Boot**
-- **Redis**
-- **PostgreSQL**
-- **Docker**
-- **NGINX**
-- **Prometheus**
-- **Grafana**
-  
----
-
-
-
-## 💳 kPaymentPipeline — Payment Management & Reconciliation System  
-**Deployed for SSN Invente Technical Fest | 2025**
-
-A Kafka-based real-time payment reconciliation platform built to process thousands of digital transactions with strong correctness guarantees.
-
-### Highlights
-- Event-driven reconciliation pipeline using Kafka
-- Stateful stream processing with joins, aggregations, and windowing
-- Redis-backed email ingestion system for payment receipt detection
-- Idempotent processing to prevent duplicate reconciliation
-- Load-tested at **50,000+ records per minute** using K6
-- Fully containerized production deployment
-
-### Architecture Concepts
-- Kafka producers and consumers
-- Kafka Streams with time-windowed joins
-- Redis-backed deduplication
-- Transaction reconciliation pipelines
-- Observability and throughput benchmarking
-
-**Tech Stack**  
-`Java • Spring Boot • Apache Kafka • Kafka Streams • Redis • PostgreSQL • Docker • K6`
-
-🔗 https://github.com/AvGeeky/kpaymentpipeline
+`Java` `Spring Boot` `Redis` `PostgreSQL` `Docker` `NGINX` `Prometheus` `Grafana`
 
 ---
 
-## 🧾 AttendEz — Secure Multi-Mode Attendance Platform  
-**Deployed for SSN College | 2025**
+### 💳 Payment Pipelines for Invente (SSN's tech fest)
 
-A production-grade attendance system designed to eliminate proxy marking and manual verification overhead.
-
-### Features
-- Dynamic time-rotating QR codes
-- One-time attendance codes for quick sessions
-- Manual mode with teacher overrides
-- Cryptographic device-bound verification
-- Live attendance dashboards
-- On-prem deployment
-
-### Security Model
-- HMAC-based authentication using device-bound secrets
-- Time-limited code expiry
-- Replay attack prevention
-- Redis-managed verification windows
-
-### Architecture Concepts
-- Redis for real-time verification state
-- MongoDB for persistent academic records
-- Time-based validation engine
-- SSE-driven live updates
-
-**Tech Stack**  
-`Java • Spring Boot • Redis • MongoDB • Docker • NGINX • JUnit • Jenkins`
-
-🔗 https://github.com/AvGeeky/AttendanceSystemBE
-🔗 Demo: https://www.youtube.com/watch?v=YFHxfV337GY
+| | **Kafka Payment Pipeline (2025)** | **Redis Payment Pipeline (2026)** |
+|---|---|---|
+| Scale | **3,000+ transactions** at the fest | k6 load test: **1,000 req/s at 517ms p95, 0% failures** over 100K+ requests |
+| Core idea | Transactional Outbox producers + **Kafka Streams windowed joins** to reconcile payments with settlement receipts | Transactional Outbox on Postgres (`FOR UPDATE SKIP LOCKED`) feeding **Redis Streams** consumer groups |
+| Reliability | Handles out-of-window events; ceiling validated at **50,000+ events/min** | XCLAIM sweeper threads, dead-letter queues, idempotent processing |
+| Ops | Prometheus, Grafana, NGINX-fronted VPS | NGINX gateway, SSL, Prometheus/Grafana/Loki, Cloudflare |
+| Code | [kpaymentpipeline](https://github.com/AvGeeky/kpaymentpipeline_invente2025PaymentSystem) | [SSNInventePaymentSystem_Backend2026](https://github.com/AvGeeky/SSNInventePaymentSystem_Backend2026) |
 
 ---
 
-## 🔐 SecUrVote — Cryptographically Verifiable Voting Platform
+### 🧾 AttendEz: secure multi-mode attendance
+**Deployed at SSN College** · 🥈 *2nd Place, Encender 3.0 Project Expo 2026* · [Code](https://github.com/AvGeeky/AttendanceSystemBE) · [Demo ▶](https://www.youtube.com/watch?v=YFHxfV337GY)
 
-A secure digital voting system focused on voter authenticity, privacy, and transparent verification.
+- Three modes: manual, one-time codes, **time-rotating QR**
+- **HMAC-SHA256** verification with per-user, device-bound secrets, plus biometric-gated auth
+- Redis-backed ephemeral QR state with **sub-millisecond** server-side verification
+- Cut manual verification overhead by **95%**; **200+ concurrent submissions** in production
 
-### Features
-- RSA-based vote encryption
-- HMAC-secured Magic IDs for vote uniqueness
-- PBKDF2-based authentication
-- OTP login flow
-- Immutable blockchain-style vote ledger
-- Public vote verification interface
-
-### Architecture Concepts
-- Two-phase cryptographic voting
-- Anonymous ballot storage
-- Tamper-evident ledger design
-- Modular backend services
-
-**Tech Stack**  
-`Java • Spring Boot • MongoDB • Cryptography • Docker`
-
-🏆 **1st Prize — Encender Project Expo (CSE Department)**
-
-🔗  
-- Website: https://securvote.vercel.app  
-- Demo Video: https://youtu.be/4nAzh8N8cbA  
-- About: https://securvote.vercel.app/about  
-
-## 🎤 InterVueX — AI-Powered Smart Hiring Platform
-
-An intelligent interview platform combining technical assessment with behavioral analysis.
-
-### Features
-- Resume- and rubric-driven question generation
-- Live coding interviews via Judge0
-- Face detection and audio processing
-- Sentiment analysis and automated summaries
-
-🏆 **1st Place — InnovateX National Hackathon (100+ teams)**
-
-**Tech Stack**  
-`Python • AI/ML • Judge0 • Audio Processing`
+`Java` `Spring Boot` `Redis` `MongoDB` `Docker` `NGINX` `JUnit` `Jenkins`
 
 ---
 
-## 🎓 PeerLearn — Peer-to-Peer Learning Platform
+### 🔐 SecUrVote: cryptographically verifiable voting
+🥇 *1st Place, Encender 2.0 Project Expo 2025* · [Backend](https://github.com/AvGeeky/SecUrVote_BE) · [Frontend](https://github.com/AvGeeky/SecUrVote_Frontend) · [Site](https://securvote.vercel.app) · [Demo ▶](https://youtu.be/4nAzh8N8cbA)
 
-A collaborative learning ecosystem focused on incentivized education.
+RSA vote encryption, HMAC-secured Magic IDs for uniqueness, PBKDF2 auth with OTP login, and an immutable blockchain-style ledger with public verification.
 
-### Features
-- Gamified in-app currency system (*Stars*)
-- Community-generated learning roadmaps
-- Dynamic teacher–learner role switching
+### 🎤 InterVueX: AI-powered hiring
+🥇 *1st Place, InnovateX National Hackathon (100+ teams)* · [Backend](https://github.com/AvGeeky/InterVueX-Backend)
 
-Built within **24 hours** during Envision SSN.
+Resume- and rubric-driven question generation, live coding via Judge0, face detection, audio processing and sentiment analysis.
 
-**Tech Stack**  
-`Spring Boot • Web • Gamification Systems`
+### 🎓 PeerLearn: peer-to-peer learning
+Built in **24 hours** at Envision SSN · [Backend](https://github.com/AvGeeky/PeerLearn_Backend)
+
+Gamified "Stars" currency, community roadmaps, and dynamic teacher/learner roles.
+
+<details>
+<summary><b>🧩 More projects</b></summary>
+
+<br/>
+
+- 🔑 [Simple Password Manager](https://github.com/AvGeeky/simplePasswordManager_SoftwareSecurityAssignment): Java, software security coursework
+- 🚆 [Railway Reservation System](https://github.com/AvGeeky/Railway_Reservation_CLangProject): C, booking, PNR status, cancellation
+- 🧍 [P-DaISy](https://github.com/AvGeeky/csproject-P-DaISy): police database and facial-recognition identification (high school project)
+- 🩺 [healthbusters](https://github.com/AvGeeky/healthbusters): Dart / Flutter
+- 🎮 [QGameRepo](https://github.com/AvGeeky/QGameRepo): Godot game for the FAI lab
+- 🧠 [ML Lab](https://github.com/AvGeeky/ML_Lab_Sai) · ⚙️ [Compiler Design Lab](https://github.com/AvGeeky/CompilerDesignLab)
+
+</details>
 
 ---
 
-## 🧩 Other Notable Projects
+## 🛠️ Tech stack
 
-- 🚆 **Railway Reservation System (C)** — Seat allocation, scheduling, and ticket workflows  
-- 🧍 **Missing Persons Identification System** — Facial recognition–based detection platform (high school project)
+<div align="center">
+
+**Languages**<br/>
+<img src="https://skillicons.dev/icons?i=java,python,c,postgres,js,html,css" /><br/>
+**Backend & data**<br/>
+<img src="https://skillicons.dev/icons?i=spring,fastapi,flask,postgres,mongodb,redis,kafka" /><br/>
+**Cloud & DevOps**<br/>
+<img src="https://skillicons.dev/icons?i=aws,docker,nginx,linux,jenkins,prometheus,grafana,git" /><br/>
+**Frontend & tools**<br/>
+<img src="https://skillicons.dev/icons?i=react,postman,figma,idea,github" />
+
+</div>
+
+**Also:** PySpark · AWS Glue/Athena/Lake Formation · Kafka Streams · Redis Streams · k6 · JUnit
+
+---
+
+## 🏆 Achievements
+
+- 🥇 **1st**, InnovateX National Hackathon, 100+ teams (InterVueX)
+- 🥇 **1st**, Encender 2.0 Project Expo 2025 (SecUrVote)
+- 🥈 **2nd**, Encender 3.0 Project Expo 2026 (AttendEz)
+
+## 👥 Leadership
+
+- **Vice Chairperson**, ACM Chapter SSN (Jul 2026-Present)
+- **Lead, Full Stack Development**, SSN Coding Club (Sep 2026-Present)
+- **Deputy Head (Technical)**, ACM Chapter SSN (2025-2026)
+- **Placement Committee Member**, SSN College of Engineering
+
+## 📚 Research
+
+- **CLEF 2024 (JOKER Lab):** genre classification of humorous text with transformer and traditional ML models
+- **ILSUM 2024:** multilingual text summarisation with T5 and Gemini 1.0 Pro
 
 ---
 
 ---
-## Programming Languages
 
-| C | Java | Python | SQL |
-|:--:|:----:|:-----:|:----:|
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" height="40"/> |
+<div align="center">
 
-## Frameworks & Libraries
+**Open to SDE / backend opportunities, so feel free to reach out.**
 
-| Spring | Flask | Scikit-learn |
-|:------:|:-----:|:------------:|
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" height="40"/> |
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## Databases & Cloud
-
-| MongoDB | PostgreSQL | Redis | Docker | AWS |
-|:-------:|:----------:|:-----:|:------:|:---:|
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" height="40"/> |
-
-## Tools & Platforms
-
-| Git | GitHub | Linux | JetBrains | MongoDB Compass | Postman | Figma | Canva |
-|:---:|:------:|:-----:|:---------:|:----------------:|:-------:|:-----:|:-----:|
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/JetBrains_company_logo.svg" alt="JetBrains" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Compass" height="40"/> | <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="Postman" height="40"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" height="40"/> | <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Canva_Logo.svg" alt="Canva" height="40"/> |
-
-
----
-## Research & Publications
-
-- **CLEF 2024 (JOKER Lab)** – Genre classification of humorous text using transformer-based and traditional ML models.  
-- **ILSUM 2024** – Multilingual text summarization using advanced NLG models like T5 and Gemini 1.0 Pro.
-
----
-<p align="center">
-  <img src="https://profile-counter.glitch.me/AvGeeky/count.svg" alt="Visitor Count" />
-</p>
+</div>

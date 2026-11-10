@@ -5017,15 +5017,14 @@
 <g class="i">
 <text class="ln t" style="animation-delay:1228ms" x="536" y="160"><tspan fill="#a78bfa">saipranav</tspan><tspan fill="#6e7681">@</tspan><tspan fill="#ede9fe">github</tspan></text>
 <text class="ln r" style="animation-delay:1318ms" x="536" y="187">──────────────────────────</text>
-<text class="ln" style="animation-delay:1408ms" x="536" y="214"><tspan class="k">role</tspan><tspan class="v" x="646">backend engineer</tspan></text>
+<text class="ln" style="animation-delay:1408ms" x="536" y="214"><tspan class="k">role</tspan><tspan class="v" x="646">backend engineer, SDE</tspan></text>
 <text class="ln" style="animation-delay:1498ms" x="536" y="241"><tspan class="k">based</tspan><tspan class="v" x="646">chennai, india</tspan></text>
 <text class="ln" style="animation-delay:1588ms" x="536" y="268"><tspan class="k">edu</tspan><tspan class="v" x="646">b.e. cse · ssn college</tspan></text>
-<text class="ln" style="animation-delay:1678ms" x="536" y="305"><tspan class="k">backend</tspan><tspan class="v" x="646">java · spring boot · fastapi</tspan></text>
-<text class="ln" style="animation-delay:1768ms" x="536" y="332"><tspan class="k">streaming</tspan><tspan class="v" x="646">kafka · redis streams</tspan></text>
-<text class="ln" style="animation-delay:1858ms" x="536" y="359"><tspan class="k">infra</tspan><tspan class="v" x="646">aws · docker · nginx · k8s</tspan></text>
-<text class="ln" style="animation-delay:1948ms" x="536" y="386"><tspan class="k">also</tspan><tspan class="v" x="646">python · pyspark · sql · react</tspan></text>
-<text class="ln" style="animation-delay:2038ms" x="536" y="423"><tspan class="k">impact</tspan><tspan class="v" x="646">3,000+ users · 50k events/min</tspan></text>
-<text class="ln" style="animation-delay:2128ms" x="536" y="450"><tspan class="k">status</tspan><tspan class="v" x="646">ex-barclays · open to full-time</tspan></text>
+<text class="ln" style="animation-delay:1678ms" x="536" y="305"><tspan class="k">backend</tspan><tspan class="v" x="646">java · spring boot · python</tspan></text>
+<text class="ln" style="animation-delay:1768ms" x="536" y="332"><tspan class="k">streaming</tspan><tspan class="v" x="646">kafka · redis</tspan></text>
+<text class="ln" style="animation-delay:1858ms" x="536" y="359"><tspan class="k">infra</tspan><tspan class="v" x="646">aws · docker · nginx · k8s (learning)</tspan></text>
+<text class="ln" style="animation-delay:2038ms" x="536" y="423"><tspan class="k">impact</tspan><tspan class="v" x="646">3,000+ real users · tested to 50k req/min</tspan></text>
+<text class="ln" style="animation-delay:2128ms" x="536" y="450"><tspan class="k">status</tspan><tspan class="v" x="646">ex-barclays intern · open to full-time</tspan></text>
 <g class="ln" style="animation-delay:2218ms">
 <rect x="536" y="470" width="24" height="16" rx="3" fill="#1e1036"/>
 <rect x="566" y="470" width="24" height="16" rx="3" fill="#2e1065"/>

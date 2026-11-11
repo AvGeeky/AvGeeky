@@ -12,7 +12,7 @@
 <!-- <img src="assets/header.svg" alt="Saipranav M - Backend / Scalable / Real-World" width="100%"/> -->
 
 <a href="https://github.com/AvGeeky">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Building+systems+that+serve+3%2C000%2B+real+users;Kafka+%C2%B7+Redis+%C2%B7+Spring+Boot+%C2%B7+AWS+Glue;Low-latency+backends+%E2%80%A2+Event-driven+design;Ex-SDE+Intern+@+Barclays+%F0%9F%8F%A6" alt="Typing SVG" />
+
 </a>
 
 <br/>
